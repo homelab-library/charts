@@ -1,0 +1,15 @@
+name: 'Helm Publisher'
+description: 'A GitHub Action for publishing Helm charts with Github Pages'
+author: 'Phil Proctor'
+branding:
+  icon: 'command'
+  color: 'blue'
+inputs:
+  token:
+    description: 'GitHub token'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.token }}

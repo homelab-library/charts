@@ -9,3 +9,10 @@ package-all:
 
 lint-all:
     helm lint charts/*
+
+ci:
+    docker build -t helm-ci .
+    docker run --rm -it \
+        -e "GITHUB_REPOSITORY=https://github.com/proctorlabs/charts" \
+        -v $PWD:/ci \
+        helm-ci BADTOKEN

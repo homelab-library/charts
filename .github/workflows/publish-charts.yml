@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Publish Helm charts
-        uses: stefanprodan/helm-gh-pages@master
+        uses: proctorlabs/charts@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
