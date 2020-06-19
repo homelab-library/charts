@@ -3,9 +3,9 @@ entries:
   lib:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-19T12:58:47.730433138Z"
+    created: "2020-06-19T13:20:07.822691823Z"
     description: Selfhosted helm helpers
-    digest: a5d66a64d5f4f237d8c1fa44eae77f89f8efd4909d078cc328aad0549ed8759a
+    digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
     type: library
     urls:
@@ -14,16 +14,16 @@ entries:
   tasmoadmin:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-19T12:58:47.731062639Z"
+    created: "2020-06-19T13:20:07.823280923Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.1.0
     description: Deploy TasmoAdmin
-    digest: 63c57dbc791846b0593a7d84671e9ef0e307df10d091b2d2842571394c8129f3
+    digest: 45f06ed5479dba56625cf864bfcf6e2de2f8b49a0bf73e684949d4bb6231bb54
     name: tasmoadmin
     type: application
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
     version: 0.1.1
-generated: "2020-06-19T12:58:47.729193236Z"
+generated: "2020-06-19T13:20:07.822015124Z"
