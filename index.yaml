@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  dummy:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-19T04:12:07.450774956Z"
+    description: A Helm chart for Kubernetes
+    digest: 6494b99ffec7f316b4eb159695469236b0f54e9fc24849d0c2e723fc35e7623f
+    name: dummy
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/dummy-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-19T04:12:07.450085852Z"
