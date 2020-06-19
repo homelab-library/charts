@@ -1,0 +1,5 @@
+{{ template "lib.service" . }}
+---
+{{ template "lib.nfs_volume" . }}
+---
+{{ template "lib.deployment_nfs" . }}

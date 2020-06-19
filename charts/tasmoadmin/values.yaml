@@ -1,0 +1,17 @@
+image:
+  repository: raymondmm/tasmoadmin
+  pullPolicy: Always
+
+namespace: apps
+replicaCount: 1
+nfsHost: "127.0.0.1"
+nfsMountPath: /data
+cpuType: amd64
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
