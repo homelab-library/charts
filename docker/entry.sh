@@ -14,6 +14,7 @@ REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${OWNER}/${REPOSITOR
 
 helm package -u ${REPO_ROOT}/${CHARTS_DIR}/* --destination ${CHARTS_TMP_DIR}
 helm lint ${REPO_ROOT}/${CHARTS_DIR}/*
+cp ${REPO_ROOT}/README.md ${CHARTS_TMP_DIR}
 
 upload() {
     tmpDir=$(mktemp -d)
@@ -30,6 +31,7 @@ upload() {
 
     mv -f ${CHARTS_TMP_DIR}/*.tgz .
     helm repo index . --url ${CHARTS_URL}
+    mv -f ${CHARTS_TMP_DIR}/README.md .
 
     git add .
     git commit -m "Publish $charts"
