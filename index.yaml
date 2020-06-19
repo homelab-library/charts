@@ -3,7 +3,7 @@ entries:
   dummy:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-19T04:12:07.450774956Z"
+    created: "2020-06-19T12:58:47.730162938Z"
     description: A Helm chart for Kubernetes
     digest: 6494b99ffec7f316b4eb159695469236b0f54e9fc24849d0c2e723fc35e7623f
     name: dummy
@@ -11,4 +11,30 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/dummy-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-19T04:12:07.450085852Z"
+  lib:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-19T12:58:47.730433138Z"
+    description: Selfhosted helm helpers
+    digest: a5d66a64d5f4f237d8c1fa44eae77f89f8efd4909d078cc328aad0549ed8759a
+    name: lib
+    type: library
+    urls:
+    - https://proctorlabs.github.io/charts/lib-0.1.0.tgz
+    version: 0.1.0
+  tasmoadmin:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-19T12:58:47.731062639Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.1.0
+    description: Deploy TasmoAdmin
+    digest: 63c57dbc791846b0593a7d84671e9ef0e307df10d091b2d2842571394c8129f3
+    name: tasmoadmin
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
+    version: 0.1.1
+generated: "2020-06-19T12:58:47.729193236Z"
