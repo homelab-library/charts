@@ -4,7 +4,7 @@ kind: PersistentVolume
 metadata:
   name: {{ .Release.Name }}-volume
   namespace: "{{ .Values.namespace }}"
-  {{- template "selfhosted.labels" . }}
+  {{- template "lib.labels" . }}
 spec:
   capacity:
     storage: 50Gi
