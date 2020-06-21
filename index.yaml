@@ -2,7 +2,20 @@ apiVersion: v1
 entries:
   grocy:
   - apiVersion: v2
-    created: "2020-06-21T03:41:34.695065731Z"
+    created: "2020-06-21T04:33:02.139321966Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.2.1
+    description: Deploy Grocy
+    digest: 643ff1f9378c33c91ff28174a1418860a0f0301c910e050268a8968abe96f55d
+    name: grocy
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/grocy-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    created: "2020-06-21T04:33:02.138567356Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -16,7 +29,16 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
-    created: "2020-06-21T03:41:34.695609037Z"
+    created: "2020-06-21T04:33:02.140286379Z"
+    description: Selfhosted helm helpers
+    digest: f4b96363d61f06a467d1639f7e37f9cf2937f083cf76bd4a5cdf1e0d15d431d9
+    name: lib
+    type: library
+    urls:
+    - https://proctorlabs.github.io/charts/lib-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    created: "2020-06-21T04:33:02.139918774Z"
     description: Selfhosted helm helpers
     digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
@@ -26,7 +48,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T03:41:34.695272833Z"
+    created: "2020-06-21T04:33:02.139546569Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -36,7 +58,20 @@ entries:
     version: 0.1.0
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-06-21T03:41:34.696635749Z"
+    created: "2020-06-21T04:33:02.142176503Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.2.1
+    description: Deploy TasmoAdmin
+    digest: a4299693cba1ce05e009ccbda62aa9a341fcf852c04480c67ef65ef9b4ba61b2
+    name: tasmoadmin
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/tasmoadmin-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    created: "2020-06-21T04:33:02.141489394Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -50,7 +85,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T03:41:34.696049042Z"
+    created: "2020-06-21T04:33:02.140805386Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -62,4 +97,4 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
     version: 0.1.1
-generated: "2020-06-21T03:41:34.69414752Z"
+generated: "2020-06-21T04:33:02.137485842Z"
