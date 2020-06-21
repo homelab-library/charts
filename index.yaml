@@ -1,21 +1,35 @@
 apiVersion: v1
 entries:
+  firefly:
+  - apiVersion: v2
+    created: "2020-06-21T06:14:01.019356882Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.2.1
+    description: Deploy firefly
+    digest: 740bb8163235ab07f8ca76205da1c9a9f1c3733da765efe87856100c8b22878b
+    name: firefly
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/firefly-0.2.1.tgz
+    version: 0.2.1
   grocy:
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.139321966Z"
+    created: "2020-06-21T06:14:01.020984897Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy Grocy
-    digest: 643ff1f9378c33c91ff28174a1418860a0f0301c910e050268a8968abe96f55d
+    digest: 76be995a3b2c4470da42b4d08be401210b1954ac0ad8282cd649e701b57095e4
     name: grocy
     type: application
     urls:
     - https://proctorlabs.github.io/charts/grocy-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.138567356Z"
+    created: "2020-06-21T06:14:01.020127089Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -29,16 +43,16 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.140286379Z"
+    created: "2020-06-21T06:14:01.022140408Z"
     description: Selfhosted helm helpers
-    digest: f4b96363d61f06a467d1639f7e37f9cf2937f083cf76bd4a5cdf1e0d15d431d9
+    digest: cf912865752771b2d4b4238495a25df311c0c431e40dda6c363786f5de4cf797
     name: lib
     type: library
     urls:
     - https://proctorlabs.github.io/charts/lib-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.139918774Z"
+    created: "2020-06-21T06:14:01.021688304Z"
     description: Selfhosted helm helpers
     digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
@@ -48,7 +62,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T04:33:02.139546569Z"
+    created: "2020-06-21T06:14:01.0212509Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -58,20 +72,20 @@ entries:
     version: 0.1.0
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.142176503Z"
+    created: "2020-06-21T06:14:01.024230027Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy TasmoAdmin
-    digest: a4299693cba1ce05e009ccbda62aa9a341fcf852c04480c67ef65ef9b4ba61b2
+    digest: 27c79a0a85a7df342591faeeb09ededafc04d60307e725e55563a49f56307b2b
     name: tasmoadmin
     type: application
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-06-21T04:33:02.141489394Z"
+    created: "2020-06-21T06:14:01.02345422Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -85,7 +99,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T04:33:02.140805386Z"
+    created: "2020-06-21T06:14:01.022700213Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -97,4 +111,4 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
     version: 0.1.1
-generated: "2020-06-21T04:33:02.137485842Z"
+generated: "2020-06-21T06:14:01.018073871Z"
