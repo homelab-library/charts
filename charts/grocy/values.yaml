@@ -1,24 +1,24 @@
-namespace: tasmoadmin
+namespace: grocy
 replicaCount: 1
 
 image:
-  repository: raymondmm/tasmoadmin
+  repository: linuxserver/grocy
   pullPolicy: Always
   port: 80
 
 resources:
-  arch: amd64
+  arch: ~
   limits:
-    cpu: 200m
+    cpu: 600m
     memory: 256Mi
   requests:
-    cpu: 100m
+    cpu: 300m
     memory: 128Mi
 
 volume:
   storageclass: ""
   accessMode: ReadWriteOnce
-  path: /data
+  path: /config
   requests:
     storage: 10Gi
 
