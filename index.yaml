@@ -1,10 +1,24 @@
 apiVersion: v1
 entries:
+  grocy:
+  - apiVersion: v2
+    created: "2020-06-21T03:41:34.695065731Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.2.0
+    description: Deploy Grocy
+    digest: f1f7d4a812382d42b20e9694df52e4c729f55acb4639402e6e41980dbab59003
+    name: grocy
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/grocy-0.2.0.tgz
+    version: 0.2.0
   lib:
   - apiVersion: v2
-    created: "2020-06-21T03:21:03.432244994Z"
+    created: "2020-06-21T03:41:34.695609037Z"
     description: Selfhosted helm helpers
-    digest: f7fcafb664a1377e629b2b55d9b2ae05538f21a6e91df888167f663e31849485
+    digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
     type: library
     urls:
@@ -12,7 +26,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T03:21:03.431886884Z"
+    created: "2020-06-21T03:41:34.695272833Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -22,13 +36,13 @@ entries:
     version: 0.1.0
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-06-21T03:21:03.433344827Z"
+    created: "2020-06-21T03:41:34.696635749Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.0
     description: Deploy TasmoAdmin
-    digest: 5cfb79025ae3b2fbf0dc00003f40b852d2790269e05cb6f4cb8b324acb4148d9
+    digest: e8fd043e4d6c61785f8a7f637ba6de1be7052583e2bbd21f3ee3040bf41c5caf
     name: tasmoadmin
     type: application
     urls:
@@ -36,7 +50,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-21T03:21:03.432750609Z"
+    created: "2020-06-21T03:41:34.696049042Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -48,4 +62,4 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
     version: 0.1.1
-generated: "2020-06-21T03:21:03.431505573Z"
+generated: "2020-06-21T03:41:34.69414752Z"
