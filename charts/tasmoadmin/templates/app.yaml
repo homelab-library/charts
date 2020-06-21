@@ -1,5 +1,7 @@
-{{ template "lib.service" . }}
+{{ include "lib.deployment" . }}
 ---
-{{ template "lib.nfs_volume" . }}
+{{ include "lib.service" . }}
 ---
-{{ template "lib.deployment_nfs" . }}
+{{ include "lib.ingress" . }}
+---
+{{ include "lib.volume" . }}

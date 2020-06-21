@@ -10,6 +10,17 @@ package-all:
 lint-all:
     helm lint charts/*
 
+render chart:
+    helm package -u "charts/{{chart}}" --destination out
+    helm template --debug "charts/{{chart}}" | tee "out/{{chart}}.yml"
+
+watch chart:
+    watchexec -i *.tgz -i *.lock -i tmpcharts -i out -i "{{chart}}/charts" just render "{{chart}}"
+
+debug chart:
+    helm package -u "charts/{{chart}}" --destination out
+    helm install "{{chart}}" "charts/{{chart}}" --debug --dry-run
+
 ci:
     docker build -t helm-ci .
     docker run --rm -it \

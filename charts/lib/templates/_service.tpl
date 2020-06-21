@@ -1,17 +1,22 @@
 {{ define "lib.service" }}
+
+{{ $service := .Values.service }}
+{{ $image := .Values.image }}
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}
-  namespace: "{{ .Values.namespace }}"
-  {{- template "lib.labels" . }}
+  name: {{ include "lib.rel_name" . | quote }}
+  namespace: {{ include "lib.namespace" . | quote }}
+{{- include "lib.labels" . | indent 2 }}
 spec:
-  type: ClusterIP
+  type: {{ $service.kind | quote }}
   ports:
-    - port: 80
-      targetPort: 80
-      protocol: TCP
-      name: http
+    - port: {{ $service.port }}
+      targetPort: {{ $image.port }}
+      protocol: {{ $service.protocol }}
+      name: {{ $service.name }}
   selector:
-    id.proctor.service: {{ .Release.Name }}
+    selfhosted.appname: {{ include "lib.rel_name" . | quote }}
+
 {{ end }}

@@ -1,8 +1,8 @@
-namespace: apps
+namespace: ''
 replicaCount: 1
 
 image:
-  repository: raymondmm/tasmoadmin
+  repository: ''
   pullPolicy: Always
   port: 80
 
@@ -16,9 +16,8 @@ resources:
     memory: 128Mi
 
 volume:
-  storageclass: ""
+  storageclass: ''
   accessMode: ReadWriteOnce
-  path: /data
   requests:
     storage: 10Gi
 
