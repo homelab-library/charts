@@ -34,6 +34,11 @@ spec:
       containers:
         - image: {{ $image.repository | quote }}
           name: {{ include "lib.rel_name" . | quote }}
+          env:
+{{- range $key, $val := $image.env }}
+            - name: {{ $key | upper | quote }}
+              value: {{ $val | quote }}
+{{- end }}
           imagePullPolicy: "{{ $image.pullPolicy }}"
           resources:
             limits:

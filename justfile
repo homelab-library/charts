@@ -21,6 +21,9 @@ debug chart:
     helm package -u "charts/{{chart}}" --destination out
     helm install "{{chart}}" "charts/{{chart}}" --debug --dry-run
 
+new chart:
+    cp -r ref "charts/{{chart}}"
+
 ci:
     docker build -t helm-ci .
     docker run --rm -it \

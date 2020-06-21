@@ -1,0 +1,87 @@
+namespace: default
+replicaCount: 1
+
+image:
+  repository: jc5x/firefly-iii:latest
+  pullPolicy: Always
+  port: 80
+  env:
+    APP_ENV: local
+    APP_DEBUG: 'false'
+    SITE_OWNER: owner@example.com
+    APP_KEY: KEYVAL
+    TZ: America/New_York
+    APP_URL: URL
+    TRUSTED_PROXIES: 'PROXIES'
+    LOG_CHANNEL: daily
+    APP_LOG_LEVEL: notice
+    DB_CONNECTION: pgsql
+    DB_HOST: "DBHOST"
+    DB_PORT: '5432'
+    DB_DATABASE: firefly
+    DB_USERNAME: "PGUSER"
+    DB_PASSWORD: "PGPASS"
+    PGSQL_SSL_MODE: prefer
+    PGSQL_SSL_ROOT_CERT: "null"
+    PGSQL_SSL_CERT: "null"
+    PGSQL_SSL_KEY: "null"
+    PGSQL_SSL_CRL_FILE: "null"
+    CACHE_DRIVER: file
+    SESSION_DRIVER: file
+    COOKIE_PATH: "/"
+    COOKIE_DOMAIN: ''
+    COOKIE_SECURE: "false"
+    MAIL_DRIVER: log
+    SEND_REGISTRATION_MAIL: "false"
+    SEND_ERROR_MESSAGE: "false"
+    SEND_REPORT_JOURNALS: "false"
+    LOGIN_PROVIDER: ldap
+    ADLDAP_CONNECTION_SCHEME: OpenLDAP
+    ADLDAP_AUTO_CONNECT: "true"
+    ADLDAP_CONTROLLERS: "LDAPURL"
+    ADLDAP_PORT: "389"
+    ADLDAP_TIMEOUT: "5"
+    ADLDAP_BASEDN: "dc=example,dc=com"
+    ADLDAP_FOLLOW_REFFERALS: "false"
+    ADLDAP_USE_SSL: "false"
+    ADLDAP_USE_TLS: "false"
+    ADLDAP_ADMIN_USERNAME: "LDAPUSER"
+    ADLDAP_ADMIN_PASSWORD: LDAPPASS
+    ADLDAP_PASSWORD_SYNC: "false"
+    ADLDAP_LOGIN_FALLBACK: "false"
+    ADLDAP_DISCOVER_FIELD: uid
+    ADLDAP_ACCOUNT_PREFIX: "uid="
+    ADLDAP_ACCOUNT_SUFFIX: ",ou=users,dc=example,dc=com"
+    ADLDAP_AUTH_FIELD: uid
+    ADLDAP_SYNC_FIELD: uid
+    DISABLE_FRAME_HEADER: "false"
+    APP_NAME: FIREFLYNAME
+
+resources:
+  arch: amd64
+  limits:
+    cpu: 200m
+    memory: 256Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+volume:
+  storageclass: ""
+  accessMode: ReadWriteOnce
+  path: /data
+  requests:
+    storage: 10Gi
+
+service:
+  kind: "ClusterIP"
+  port: 80
+  protocol: TCP
+  name: http
+
+ingress:
+  enabled: true
+  hostname: example.com
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"

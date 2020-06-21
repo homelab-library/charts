@@ -5,6 +5,7 @@ image:
   repository: ''
   pullPolicy: Always
   port: 80
+  env: {}
 
 resources:
   arch: amd64

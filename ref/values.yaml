@@ -1,8 +1,8 @@
-namespace: tasmoadmin
+namespace: default
 replicaCount: 1
 
 image:
-  repository: raymondmm/tasmoadmin
+  repository: alpine
   pullPolicy: Always
   port: 80
   env: {}

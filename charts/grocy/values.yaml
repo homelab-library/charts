@@ -5,6 +5,7 @@ image:
   repository: linuxserver/grocy
   pullPolicy: Always
   port: 80
+  env: {}
 
 resources:
   arch: ~
