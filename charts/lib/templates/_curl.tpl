@@ -1,4 +1,6 @@
-{{ define "lib.configmap" }}
+{{ define "lib.curl" }}
+{{ $curl := .Values.curl }}
+{{ if $curl.enabled }}
 
 apiVersion: batch/v1beta1
 kind: CronJob
@@ -6,16 +8,17 @@ metadata:
   name: {{ include "lib.rel_name" . | quote }}
   namespace: {{ include "lib.namespace" . | quote }}
 spec:
-  schedule: {{ .Values.cron.schedule | quote }}
+  schedule: {{ $curl.schedule | quote }}
   jobTemplate:
     spec:
       template:
         spec:
           containers:
-          - name: {{ print "curl-" include "lib.rel_name" . }}
+          - name: {{ print "curl-" (include "lib.rel_name" .) }}
             image: lucashalbert/curl
             args:
-              - {{ .Values.cron.url | quote }}
+              - {{ $curl.url | quote }}
           restartPolicy: OnFailure
 
+{{ end }}
 {{ end }}

@@ -1,64 +1,68 @@
-namespace: default
 replicaCount: 1
+
+curl:
+  enabled: yes
+  schedule: '0 * * * *'
+  url: 'http://cluster-local-host/'
 
 image:
   repository: jc5x/firefly-iii:latest
   pullPolicy: Always
   port: 80
   env:
-    APP_ENV: local
-    APP_DEBUG: 'false'
-    SITE_OWNER: owner@example.com
-    APP_KEY: KEYVAL
-    TZ: America/New_York
-    APP_URL: URL
-    TRUSTED_PROXIES: 'PROXIES'
-    LOG_CHANNEL: daily
-    APP_LOG_LEVEL: notice
-    DB_CONNECTION: pgsql
-    DB_HOST: "DBHOST"
-    DB_PORT: '5432'
-    DB_DATABASE: firefly
-    DB_USERNAME: "PGUSER"
-    DB_PASSWORD: "PGPASS"
-    PGSQL_SSL_MODE: prefer
-    PGSQL_SSL_ROOT_CERT: "null"
-    PGSQL_SSL_CERT: "null"
-    PGSQL_SSL_KEY: "null"
-    PGSQL_SSL_CRL_FILE: "null"
-    CACHE_DRIVER: file
-    SESSION_DRIVER: file
-    COOKIE_PATH: "/"
-    COOKIE_DOMAIN: ''
-    COOKIE_SECURE: "false"
-    MAIL_DRIVER: log
-    SEND_REGISTRATION_MAIL: "false"
-    SEND_ERROR_MESSAGE: "false"
-    SEND_REPORT_JOURNALS: "false"
-    LOGIN_PROVIDER: ldap
-    ADLDAP_CONNECTION_SCHEME: OpenLDAP
-    ADLDAP_AUTO_CONNECT: "true"
-    ADLDAP_CONTROLLERS: "LDAPURL"
-    ADLDAP_PORT: "389"
-    ADLDAP_TIMEOUT: "5"
-    ADLDAP_BASEDN: "dc=example,dc=com"
-    ADLDAP_FOLLOW_REFFERALS: "false"
-    ADLDAP_USE_SSL: "false"
-    ADLDAP_USE_TLS: "false"
-    ADLDAP_ADMIN_USERNAME: "LDAPUSER"
-    ADLDAP_ADMIN_PASSWORD: LDAPPASS
-    ADLDAP_PASSWORD_SYNC: "false"
-    ADLDAP_LOGIN_FALLBACK: "false"
-    ADLDAP_DISCOVER_FIELD: uid
-    ADLDAP_ACCOUNT_PREFIX: "uid="
-    ADLDAP_ACCOUNT_SUFFIX: ",ou=users,dc=example,dc=com"
-    ADLDAP_AUTH_FIELD: uid
-    ADLDAP_SYNC_FIELD: uid
-    DISABLE_FRAME_HEADER: "false"
-    APP_NAME: FIREFLYNAME
+    app_name: FIREFLYNAME
+    app_env: local
+    app_debug: 'false'
+    site_owner: ''
+    app_key: ''
+    tz: America/New_York
+    app_url: URL
+    trusted_proxies: ''
+    log_channel: daily
+    app_log_level: notice
+    db_connection: pgsql
+    db_host: ''
+    db_port: '5432'
+    db_database: firefly
+    db_username: ''
+    db_password: ''
+    pgsql_ssl_mode: prefer
+    pgsql_ssl_root_cert: "null"
+    pgsql_ssl_cert: "null"
+    pgsql_ssl_key: "null"
+    pgsql_ssl_crl_file: "null"
+    cache_driver: file
+    session_driver: file
+    cookie_path: "/"
+    cookie_domain: ''
+    cookie_secure: "false"
+    mail_driver: log
+    send_registration_mail: "false"
+    send_error_message: "false"
+    send_report_journals: "false"
+    login_provider: ldap
+    adldap_auto_connect: "true"
+    adldap_port: "389"
+    adldap_timeout: "5"
+    adldap_follow_refferals: "false"
+    adldap_use_ssl: "false"
+    adldap_use_tls: "false"
+    adldap_password_sync: "false"
+    adldap_login_fallback: "false"
+    adldap_controllers: ''
+    adldap_connection_scheme: ''
+    adldap_basedn: ''
+    adldap_admin_username: ''
+    adldap_admin_password: ''
+    adldap_discover_field: ''
+    adldap_account_prefix: ''
+    adldap_account_suffix: ''
+    adldap_auth_field: ''
+    adldap_sync_field: ''
+    disable_frame_header: "false"
 
 resources:
-  arch: amd64
+  arch: ~
   limits:
     cpu: 200m
     memory: 256Mi

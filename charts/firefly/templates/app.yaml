@@ -5,3 +5,5 @@
 {{ include "lib.ingress" . }}
 ---
 {{ include "lib.volume" . }}
+---
+{{ include "lib.curl" . }}
