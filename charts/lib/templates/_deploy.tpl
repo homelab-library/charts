@@ -7,7 +7,6 @@
 {{ $arch := $resources.arch }}
 {{ $limits := $resources.limits }}
 {{ $requests := $resources.requests }}
-{{ $pvc_name := print .Release.Name "-claim" }}
 {{ $data_name := print .Release.Name "-data" }}
 
 apiVersion: apps/v1
@@ -49,7 +48,7 @@ spec:
       volumes:
         - name: {{ $data_name | quote }}
           persistentVolumeClaim:
-            claimName: {{ $pvc_name | quote }}
+            claimName: {{ include "lib.pvc_name" . | quote }}
       restartPolicy: Always
 
 {{ end }}

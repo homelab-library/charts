@@ -19,6 +19,7 @@ volume:
   storageclass: ""
   accessMode: ReadWriteOnce
   path: /config
+  claim: ~
   requests:
     storage: 10Gi
 

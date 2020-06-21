@@ -10,5 +10,14 @@ labels:
 {{- end }}
 
 {{ define "lib.namespace" -}}
-{{ .Values.namespace }}
+{{ .Release.Namespace }}
 {{- end }}
+
+{{ define "lib.pvc_name" -}}
+{{- if not .Values.volume.claim -}}
+{{ print .Release.Name "-claim" }}
+{{- else -}}
+{{ .Values.volume.claim }}
+{{- end -}}
+{{- end }}
+
