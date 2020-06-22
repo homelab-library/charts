@@ -19,7 +19,7 @@ watch chart:
 
 debug chart:
     helm package -u "charts/{{chart}}" --destination out
-    helm install "{{chart}}" "charts/{{chart}}" --debug --dry-run
+    helm install "{{chart}}" "charts/{{chart}}" --debug --dry-run -n "default"
 
 new chart:
     cp -r ref "charts/{{chart}}"

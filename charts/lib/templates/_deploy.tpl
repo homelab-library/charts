@@ -1,13 +1,24 @@
-{{ define "lib.deployment" }}
+{{ define "deploy.volume_claims" -}}
+{{- $data_name := print .Release.Name "-data" -}}
+- name: {{ $data_name | quote }}
+  persistentVolumeClaim:
+    claimName: {{ include "lib.pvc_name" . | quote }}
+{{- end }}
 
+{{ define "deploy.volume_mappings" -}}
+{{- $pvc_mount_path := .Values.volume.path -}}
+{{- $data_name := print .Release.Name "-data" -}}
+- name: {{ $data_name | quote }}
+  mountPath: {{ $pvc_mount_path | quote }}
+{{- end }}
+
+{{ define "lib.deployment" }}
 {{ $image := .Values.image }}
 {{ $replicas := .Values.replicaCount }}
-{{ $pvc_mount_path := .Values.volume.path }}
 {{ $resources := .Values.resources }}
 {{ $arch := $resources.arch }}
 {{ $limits := $resources.limits }}
 {{ $requests := $resources.requests }}
-{{ $data_name := print .Release.Name "-data" }}
 
 apiVersion: apps/v1
 kind: Deployment
@@ -46,14 +57,11 @@ spec:
             requests:
 {{ $requests | toYaml | indent 14 }}
           volumeMounts:
-            - name: {{ $data_name | quote }}
-              mountPath: {{ $pvc_mount_path | quote }}
+{{ include "deploy.volume_mappings" . | indent 12 }}
           ports:
             - containerPort: {{ $image.port }}
       volumes:
-        - name: {{ $data_name | quote }}
-          persistentVolumeClaim:
-            claimName: {{ include "lib.pvc_name" . | quote }}
+{{ include "deploy.volume_claims" . | indent 8 }}
       restartPolicy: Always
 
 {{ end }}

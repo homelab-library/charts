@@ -20,4 +20,3 @@ labels:
 {{ .Values.volume.claim }}
 {{- end -}}
 {{- end }}
-

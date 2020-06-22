@@ -1,9 +1,10 @@
+{{ define "deploy.volume_claims" -}}[]{{ end }}
+{{ define "deploy.volume_mappings" -}}[]{{ end }}
+
 {{ include "lib.deployment" . }}
 ---
 {{ include "lib.service" . }}
 ---
 {{ include "lib.ingress" . }}
----
-{{ include "lib.volume" . }}
 ---
 {{ include "lib.curl" . }}
