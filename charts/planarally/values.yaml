@@ -18,7 +18,7 @@ resources:
 volume:
   storageclass: ""
   accessMode: ReadWriteOnce
-  path: /data
+  path: /planarally/static/assets
   requests:
     storage: 10Gi
 
