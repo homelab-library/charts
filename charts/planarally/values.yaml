@@ -18,7 +18,8 @@ resources:
 volume:
   storageclass: ""
   accessMode: ReadWriteOnce
-  path: /planarally/static/assets
+  dataPVC: ""
+  assetPVC: ""
   requests:
     storage: 10Gi
 

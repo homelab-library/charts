@@ -1,3 +1,23 @@
+{{ define "deploy.volume_claims" -}}
+{{- $assets_name := print .Release.Name "-assets" -}}
+{{- $data_name := print .Release.Name "-data" -}}
+- name: {{ $assets_name | quote }}
+  persistentVolumeClaim:
+    claimName: {{ .Values.volume.assetPVC | quote }}
+- name: {{ $data_name | quote }}
+  persistentVolumeClaim:
+    claimName: {{ .Values.volume.dataPVC | quote }}
+{{- end }}
+
+{{ define "deploy.volume_mappings" -}}
+{{- $assets_name := print .Release.Name "-assets" -}}
+{{- $data_name := print .Release.Name "-data" -}}
+- name: {{ $assets_name | quote }}
+  mountPath: "/planarally/static/assets"
+- name: {{ $data_name | quote }}
+  mountPath: "/planarally/data"
+{{- end }}
+
 {{ include "lib.deployment" . }}
 ---
 {{ include "lib.service" . }}
