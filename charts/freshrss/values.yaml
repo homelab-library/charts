@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: freshrss/freshrss
+  repository: freshrss/freshrss:1.16.2-arm
   pullPolicy: Always
   port: 80
   env: {}
