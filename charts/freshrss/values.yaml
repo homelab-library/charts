@@ -18,7 +18,7 @@ resources:
 volume:
   storageclass: ""
   accessMode: ReadWriteOnce
-  path: /data
+  path: /var/www/FreshRSS/data
   requests:
     storage: 10Gi
 
