@@ -1,6 +1,6 @@
 apiVersion: v2
-name: NAME
-description: Deploy NAME
+name: freshrss
+description: Deploy FreshRSS
 type: application
 version: 0.2.1
 dependencies:
