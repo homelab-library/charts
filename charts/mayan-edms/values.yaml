@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: mayanedms/mayanedms:3.4.10
   pullPolicy: Always
-  port: 80
+  port: 8000
   env: {}
 
 resources:
