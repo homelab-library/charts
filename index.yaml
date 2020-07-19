@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   NAME:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.017701424Z"
+    created: "2020-07-19T03:54:05.014574941Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -16,13 +16,13 @@ entries:
     version: 0.2.1
   docker-registry:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.018499725Z"
+    created: "2020-07-19T03:54:05.015390041Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy docker-registry
-    digest: bbde459ebfe8e44cccdd3eee05c2b073aaffbe454ec271e620781929d6cfa05c
+    digest: 0ea605375e58ecef38eaad5be55cbf5105e4f28338863a2ef6b48ae8313bae9d
     name: docker-registry
     type: application
     urls:
@@ -30,13 +30,13 @@ entries:
     version: 0.2.1
   firefly:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.019604827Z"
+    created: "2020-07-19T03:54:05.016562441Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy firefly
-    digest: 8383cb59fef112578d4bbcca65389d4f5f13d8a27ebb75322f0bd0cbfa39cf86
+    digest: 51b0ad00efefb9a500566e17ce99a2d5fc59641a7b24bd887558505c31f21315
     name: firefly
     type: application
     urls:
@@ -44,13 +44,13 @@ entries:
     version: 0.2.1
   freshrss:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.020481128Z"
+    created: "2020-07-19T03:54:05.017253842Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy FreshRSS
-    digest: 67d4ec4640ec9a05691b49b0c088ae4adf57c46da76e066909b6c4ab3f2200c1
+    digest: cf484a1094e538069ee81a503f4323f4396013875169484c884c6d3a530a3bed
     name: freshrss
     type: application
     urls:
@@ -58,20 +58,20 @@ entries:
     version: 0.2.1
   grocy:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.022133131Z"
+    created: "2020-07-19T03:54:05.018649942Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy Grocy
-    digest: 2b96dddba8d501bf4ee1c8ac9adad738b5e32b855f1afef35130396f17367577
+    digest: 2487df486767354e0daa4470f52cac9d23871100d4d63e93c4a5f4c8c481ea6b
     name: grocy
     type: application
     urls:
     - https://proctorlabs.github.io/charts/grocy-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.02125453Z"
+    created: "2020-07-19T03:54:05.017951742Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -85,16 +85,16 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.023234133Z"
+    created: "2020-07-19T03:54:05.019718542Z"
     description: Selfhosted helm helpers
-    digest: 62a284987a15ad1c32fb89099e38e72e10a491159005582fc03452d2c4225b47
+    digest: 889f928907ed27fb9d7be321658ab71847a30a49d2a046ba1d88ffefbf9508b3
     name: lib
     type: library
     urls:
     - https://proctorlabs.github.io/charts/lib-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.022801532Z"
+    created: "2020-07-19T03:54:05.019273242Z"
     description: Selfhosted helm helpers
     digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
@@ -104,7 +104,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-17T04:21:41.022385731Z"
+    created: "2020-07-19T03:54:05.018883542Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -114,13 +114,13 @@ entries:
     version: 0.1.0
   mayan-edms:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.024003734Z"
+    created: "2020-07-19T03:54:05.020615142Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy Mayan EDMS
-    digest: 727988b4aa961d9059b2eb2f4cfbcd4c1380fd3a9c66d12a7bf6e89fe90a2c67
+    digest: 5531cf0cb75248f1aecc13869746a58933307758f56985c370a9d5768e611c08
     name: mayan-edms
     type: application
     urls:
@@ -128,13 +128,13 @@ entries:
     version: 0.2.1
   planarally:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.024793636Z"
+    created: "2020-07-19T03:54:05.021339142Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy planarally
-    digest: 8ce7099d485cf9885b10ae1fcdf4503ad662f7a610bfc97de91def3b936bad0b
+    digest: 9618fd5a30309665a1cd559a1b46732e7d56134187d69e56204d479d13ed2c2b
     name: planarally
     type: application
     urls:
@@ -142,20 +142,20 @@ entries:
     version: 0.2.1
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.028046041Z"
+    created: "2020-07-19T03:54:05.024718443Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.2.1
     description: Deploy TasmoAdmin
-    digest: 4ad37f9c9930f800e6232d56b656acd71c29aab6e81e779dd8d3f5f0717cefce
+    digest: 95b0e1fce24f619dcbeb334b3fba822cbf9f2622e70da00d06cbc96ea80fe0cd
     name: tasmoadmin
     type: application
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-07-17T04:21:41.025993438Z"
+    created: "2020-07-19T03:54:05.023721743Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -169,7 +169,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-07-17T04:21:41.025302336Z"
+    created: "2020-07-19T03:54:05.021829842Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -181,4 +181,4 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.1.1.tgz
     version: 0.1.1
-generated: "2020-07-17T04:21:41.016344321Z"
+generated: "2020-07-19T03:54:05.013631641Z"
