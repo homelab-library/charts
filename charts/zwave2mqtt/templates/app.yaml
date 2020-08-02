@@ -1,0 +1,30 @@
+{{ define "deploy.volume_claims" -}}
+- name: zwavestick
+  hostPath:
+    path: {{ .Values.device.path | quote }}
+    type: File
+- name: data
+  persistentVolumeClaim:
+    claimName: {{ include "lib.pvc_name" . | quote }}
+{{- end }}
+
+{{ define "deploy.volume_mappings" -}}
+- mountPath: /dev/ttyUSB1
+  name: zwavestick
+- mountPath: /usr/src/app/store
+  name: data
+{{- end }}
+
+{{ define "deploy.container_options" -}}
+securityContext:
+  allowPrivilegeEscalation: true
+  privileged: true
+{{- end }}
+
+{{ include "lib.deployment" . }}
+---
+{{ include "lib.service" . }}
+---
+{{ include "lib.ingress" . }}
+---
+{{ include "lib.volume" . }}

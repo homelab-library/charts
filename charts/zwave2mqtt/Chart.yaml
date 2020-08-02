@@ -1,6 +1,6 @@
 apiVersion: v2
-name: planarally
-description: Deploy planarally
+name: zwave2mqtt
+description: Z-Wave to MQTT bridge
 type: application
 version: 0.3.0
 dependencies:

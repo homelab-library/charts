@@ -12,6 +12,9 @@
   mountPath: {{ $pvc_mount_path | quote }}
 {{- end }}
 
+{{ define "deploy.container_options" -}}
+{{- end }}
+
 {{ define "lib.deployment" }}
 {{ $image := .Values.image }}
 {{ $replicas := .Values.replicaCount }}
@@ -42,6 +45,8 @@ spec:
         {{- if $arch }}
         kubernetes.io/arch: {{ $arch | quote }}
         {{- end }}
+      tolerations:
+{{ .Values.tolerations | toYaml | indent 8 }}
       containers:
         - image: {{ $image.repository | quote }}
           name: {{ include "lib.rel_name" . | quote }}
@@ -51,6 +56,7 @@ spec:
               value: {{ $val | quote }}
 {{- end }}
           imagePullPolicy: "{{ $image.pullPolicy }}"
+{{ include "deploy.container_options" . | indent 10 }}
           resources:
             limits:
 {{ $limits | toYaml | indent 14 }}
