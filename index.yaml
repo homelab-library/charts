@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   NAME:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.794038032Z"
+    created: "2020-08-02T23:39:06.864791908Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -16,7 +16,20 @@ entries:
     version: 0.2.1
   docker-registry:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.795703835Z"
+    created: "2020-08-02T23:39:06.868561008Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy docker-registry
+    digest: 106641affba128ea6f429ab2d9c9077034b2674186288afbb1a4ac181d9cd3b8
+    name: docker-registry
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/docker-registry-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.867349108Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -29,7 +42,7 @@ entries:
     - https://proctorlabs.github.io/charts/docker-registry-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.794840234Z"
+    created: "2020-08-02T23:39:06.866078508Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -43,7 +56,20 @@ entries:
     version: 0.2.1
   firefly:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.79789254Z"
+    created: "2020-08-02T23:39:06.873948209Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy firefly
+    digest: 578d07bdd861eee2ec128e2fd32403ff910cf3c1405378d0dbbb826a7fd00bca
+    name: firefly
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/firefly-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.872831308Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -56,7 +82,7 @@ entries:
     - https://proctorlabs.github.io/charts/firefly-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.796736738Z"
+    created: "2020-08-02T23:39:06.871355508Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -70,7 +96,20 @@ entries:
     version: 0.2.1
   freshrss:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.799403643Z"
+    created: "2020-08-02T23:39:06.876421309Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy FreshRSS
+    digest: 30f19e9fcb64716b29f6827a95cfb2af66e1b58ba6b1e0d008ffb55c17183114
+    name: freshrss
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/freshrss-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.875571109Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -83,7 +122,7 @@ entries:
     - https://proctorlabs.github.io/charts/freshrss-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.798582042Z"
+    created: "2020-08-02T23:39:06.874734909Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -97,7 +136,20 @@ entries:
     version: 0.2.1
   grocy:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.802830451Z"
+    created: "2020-08-02T23:39:06.880136009Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy Grocy
+    digest: c73a0aa840c4bf8a1935c8c0d9a2f05d39cf17f64c34ea8cff055489d47dc5df
+    name: grocy
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/grocy-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.879320409Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -110,7 +162,7 @@ entries:
     - https://proctorlabs.github.io/charts/grocy-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.801187347Z"
+    created: "2020-08-02T23:39:06.878567209Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -123,7 +175,7 @@ entries:
     - https://proctorlabs.github.io/charts/grocy-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.800213345Z"
+    created: "2020-08-02T23:39:06.877808209Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -137,7 +189,16 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.805504857Z"
+    created: "2020-08-02T23:39:06.882182209Z"
+    description: Selfhosted helm helpers
+    digest: 2d7a4ddf02d069dd72c56a2b198052aa43ae3324fe128f48e9b7c0a01a3f7d85
+    name: lib
+    type: library
+    urls:
+    - https://proctorlabs.github.io/charts/lib-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.881765509Z"
     description: Selfhosted helm helpers
     digest: 7dd9c3966b82b1fdd3d53d6e0ba5d255fd19189470c25895b56c4c52febe5c32
     name: lib
@@ -146,7 +207,7 @@ entries:
     - https://proctorlabs.github.io/charts/lib-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.805060356Z"
+    created: "2020-08-02T23:39:06.881329109Z"
     description: Selfhosted helm helpers
     digest: bd300a512b2e596ca6f54789310492e56099439f8ef118e5cc8e82ac009da83f
     name: lib
@@ -155,7 +216,7 @@ entries:
     - https://proctorlabs.github.io/charts/lib-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.804621355Z"
+    created: "2020-08-02T23:39:06.880890209Z"
     description: Selfhosted helm helpers
     digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
@@ -165,7 +226,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-08-02T23:18:26.803191452Z"
+    created: "2020-08-02T23:39:06.880464309Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -175,7 +236,20 @@ entries:
     version: 0.1.0
   mayan-edms:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.80694676Z"
+    created: "2020-08-02T23:39:06.88744061Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy Mayan EDMS
+    digest: 5418d6e4dde34da0e77b6ad3da65076c3753ba78043667ad6e335cd397aeb333
+    name: mayan-edms
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/mayan-edms-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.88397111Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -188,7 +262,7 @@ entries:
     - https://proctorlabs.github.io/charts/mayan-edms-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.806213758Z"
+    created: "2020-08-02T23:39:06.882867909Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -202,7 +276,20 @@ entries:
     version: 0.2.1
   planarally:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.808572763Z"
+    created: "2020-08-02T23:39:06.89148331Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy planarally
+    digest: 29a0474358c20deb96314fc9d40a5d739285b4d7689a1d0a461bd7fd3010cd3d
+    name: planarally
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/planarally-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.88929391Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -215,7 +302,7 @@ entries:
     - https://proctorlabs.github.io/charts/planarally-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.807793562Z"
+    created: "2020-08-02T23:39:06.88829531Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -229,7 +316,20 @@ entries:
     version: 0.2.1
   rundeck:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.810331467Z"
+    created: "2020-08-02T23:39:06.894342911Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy rundeck
+    digest: 867affa9c04eeb8f569eae6a0ea4fa4a00ad12eb74ab4ba88c6f83f27989f3d1
+    name: rundeck
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/rundeck-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.89326951Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -242,7 +342,7 @@ entries:
     - https://proctorlabs.github.io/charts/rundeck-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.809392865Z"
+    created: "2020-08-02T23:39:06.89244891Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -256,7 +356,20 @@ entries:
     version: 0.2.1
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.814566776Z"
+    created: "2020-08-02T23:39:06.898263211Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy TasmoAdmin
+    digest: 7207426b5de027f17e6ae10f5a576695b59cb1bda4ba9d68fa669cb1d9b5b2ee
+    name: tasmoadmin
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/tasmoadmin-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.897419811Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -269,7 +382,7 @@ entries:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.813724874Z"
+    created: "2020-08-02T23:39:06.896633811Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -282,7 +395,7 @@ entries:
     - https://proctorlabs.github.io/charts/tasmoadmin-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.812266671Z"
+    created: "2020-08-02T23:39:06.895739611Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -296,7 +409,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-08-02T23:18:26.810950768Z"
+    created: "2020-08-02T23:39:06.894883911Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -310,7 +423,20 @@ entries:
     version: 0.1.1
   zwave2mqtt:
   - apiVersion: v2
-    created: "2020-08-02T23:18:26.815421978Z"
+    created: "2020-08-02T23:39:06.902348711Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Z-Wave to MQTT bridge
+    digest: 37c941fe6b4b88c9f77f9702b4be005d835b74342db89ec18295a37c0afa41a5
+    name: zwave2mqtt
+    type: application
+    urls:
+    - https://proctorlabs.github.io/charts/zwave2mqtt-0.3.1.tgz
+    version: 0.3.1
+  - apiVersion: v2
+    created: "2020-08-02T23:39:06.899593311Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -322,4 +448,4 @@ entries:
     urls:
     - https://proctorlabs.github.io/charts/zwave2mqtt-0.3.0.tgz
     version: 0.3.0
-generated: "2020-08-02T23:18:26.79313913Z"
+generated: "2020-08-02T23:39:06.863082708Z"
