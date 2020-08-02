@@ -22,6 +22,7 @@
 {{ $arch := $resources.arch }}
 {{ $limits := $resources.limits }}
 {{ $requests := $resources.requests }}
+{{ $nodeselector := .Values.nodeselector }}
 
 apiVersion: apps/v1
 kind: Deployment
@@ -44,6 +45,9 @@ spec:
       nodeSelector:
         {{- if $arch }}
         kubernetes.io/arch: {{ $arch | quote }}
+        {{- end }}
+        {{- range $key, $val := $nodeselector }}
+        {{ $key }}: {{ $val | quote }}
         {{- end }}
       tolerations:
 {{ .Values.tolerations | toYaml | indent 8 }}

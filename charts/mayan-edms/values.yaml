@@ -36,3 +36,5 @@ ingress:
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
 
 tolerations: []
+
+nodeselector: {}
