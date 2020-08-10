@@ -1,5 +1,5 @@
 {{ define "deploy.volume_claims" -}}
-- name: zwavestick
+- name: zigbeestick
   hostPath:
     path: {{ .Values.device.path | quote }}
     type: File
@@ -10,8 +10,8 @@
 
 {{ define "deploy.volume_mappings" -}}
 - mountPath: {{ .Values.device.path | quote }}
-  name: zwavestick
-- mountPath: /usr/src/app/store
+  name: zigbeestick
+- mountPath: /app/data
   name: data
 {{- end }}
 
