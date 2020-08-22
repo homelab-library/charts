@@ -1,7 +1,5 @@
-# Self-Hosting Helm Charts
-
-Just some helm charts for self-hosters.
+# Homelabs Helm Charts
 
 ```bash
-helm repo add proctorlabs https://proctorlabs.github.io/charts/
+helm repo add homelabs https://homelab-library.github.io/charts/
 ```
