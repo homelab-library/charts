@@ -1,0 +1,34 @@
+replicaCount: 1
+
+image:
+  repository: homelabs/keycloak
+  pullPolicy: Always
+  port: 8080
+  env: {}
+
+resources:
+  arch: ~
+  limits: ~
+  requests:
+    cpu: 1000m
+    memory: 256Mi
+
+volume:
+  storageclass: ""
+  accessMode: ReadWriteOnce
+  path: /data
+  requests:
+    storage: 10Gi
+
+service:
+  kind: "ClusterIP"
+  port: 80
+  protocol: TCP
+  name: http
+
+ingress:
+  enabled: true
+  hostname: example.com
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
