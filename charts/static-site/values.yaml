@@ -1,0 +1,36 @@
+replicaCount: 1
+
+image:
+  repository: homelabs/static-site
+  pullPolicy: Always
+  port: 80
+  env: {}
+
+resources:
+  arch: ~
+  limits:
+    cpu: 1000m
+    memory: 512Mi
+  requests:
+    cpu: 500m
+    memory: 256Mi
+
+volume:
+  storageclass: ""
+  accessMode: ReadWriteOnce
+  path: /www
+  requests:
+    storage: 10Gi
+
+service:
+  kind: "ClusterIP"
+  port: 80
+  protocol: TCP
+  name: http
+
+ingress:
+  enabled: true
+  hostname: example.com
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
