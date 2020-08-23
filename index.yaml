@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   NAME:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.784624737Z"
+    created: "2020-08-23T14:51:46.725468902Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -16,20 +16,20 @@ entries:
     version: 0.2.1
   docker-registry:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.78689776Z"
+    created: "2020-08-23T14:51:46.727466625Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy docker-registry
-    digest: 6b4f2187a8a05c53154dced9fc22d8a35cebdc60262943317720fc33173081f6
+    digest: 4c1d05115742eed23b015061f09d843510ec1ee29019fa7ded62a32adcaab73d
     name: docker-registry
     type: application
     urls:
     - https://homelab-library.github.io/charts/docker-registry-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.786163053Z"
+    created: "2020-08-23T14:51:46.726842618Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -42,7 +42,7 @@ entries:
     - https://homelab-library.github.io/charts/docker-registry-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.785416145Z"
+    created: "2020-08-23T14:51:46.726116209Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -56,20 +56,20 @@ entries:
     version: 0.2.1
   firefly:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.790742999Z"
+    created: "2020-08-23T14:51:46.729829252Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy firefly
-    digest: b35d061a3b26272f97092141c629bced031b2752ada137575904811f3df6b941
+    digest: 44c38bbb3c9d7f8e737b2394311255f92d0575f1fa81de856299c655e21ebb7a
     name: firefly
     type: application
     urls:
     - https://homelab-library.github.io/charts/firefly-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.789478287Z"
+    created: "2020-08-23T14:51:46.729083844Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -82,7 +82,7 @@ entries:
     - https://homelab-library.github.io/charts/firefly-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.788068372Z"
+    created: "2020-08-23T14:51:46.728209133Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -96,20 +96,20 @@ entries:
     version: 0.2.1
   freshrss:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.792851621Z"
+    created: "2020-08-23T14:51:46.731836075Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy FreshRSS
-    digest: 0aa84e143a0ee0e5b6271d33f7096d9f1f4c2bb38b73c58c4300680f13e6837f
+    digest: 4666fe88130eed9f71786d1c343a34e54ba4e79b6fbea432ad931a597810b3b6
     name: freshrss
     type: application
     urls:
     - https://homelab-library.github.io/charts/freshrss-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.792133413Z"
+    created: "2020-08-23T14:51:46.731072166Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -122,7 +122,7 @@ entries:
     - https://homelab-library.github.io/charts/freshrss-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.791445406Z"
+    created: "2020-08-23T14:51:46.730405459Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -136,20 +136,20 @@ entries:
     version: 0.2.1
   grocy:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.795552748Z"
+    created: "2020-08-23T14:51:46.736623731Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy Grocy
-    digest: c9e7ecf834755aa070f3c9ae7c2f8300250d63c3d99c2384b3c698f7b9ead016
+    digest: f53278c433b92b17c052d570ebe9aea68ad5493701ed1097772a35057c497a9d
     name: grocy
     type: application
     urls:
     - https://homelab-library.github.io/charts/grocy-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.794860641Z"
+    created: "2020-08-23T14:51:46.735804821Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -162,7 +162,7 @@ entries:
     - https://homelab-library.github.io/charts/grocy-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.794177234Z"
+    created: "2020-08-23T14:51:46.734719309Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -175,7 +175,7 @@ entries:
     - https://homelab-library.github.io/charts/grocy-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.793505327Z"
+    created: "2020-08-23T14:51:46.733614596Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -189,13 +189,13 @@ entries:
     version: 0.2.0
   keycloak:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.796218055Z"
+    created: "2020-08-23T14:51:46.737371639Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy Keycloak
-    digest: 950e04c71f5386c6c45c6fb88644c0420f345ec6c9fe22ce76c119299e6e1c43
+    digest: b41e03d7e2f0170fef1c314ea69c96cb5599a4b4a05382094ed6cf453453aa7f
     name: keycloak
     type: application
     urls:
@@ -203,16 +203,16 @@ entries:
     version: 0.3.1
   lib:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.798537179Z"
+    created: "2020-08-23T14:51:46.73921166Z"
     description: Selfhosted helm helpers
-    digest: 9fa83fda04c8499cbb0779bae971602db7f8f4c06d0f25376ea0666f09a35dcb
+    digest: 17a38e019903f59103749acc2a58b777ac2984d12ab57709f1cc93970232486f
     name: lib
     type: library
     urls:
     - https://homelab-library.github.io/charts/lib-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.798146975Z"
+    created: "2020-08-23T14:51:46.738810856Z"
     description: Selfhosted helm helpers
     digest: 7dd9c3966b82b1fdd3d53d6e0ba5d255fd19189470c25895b56c4c52febe5c32
     name: lib
@@ -221,7 +221,7 @@ entries:
     - https://homelab-library.github.io/charts/lib-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.797223765Z"
+    created: "2020-08-23T14:51:46.738411651Z"
     description: Selfhosted helm helpers
     digest: bd300a512b2e596ca6f54789310492e56099439f8ef118e5cc8e82ac009da83f
     name: lib
@@ -230,7 +230,7 @@ entries:
     - https://homelab-library.github.io/charts/lib-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.796822861Z"
+    created: "2020-08-23T14:51:46.738000146Z"
     description: Selfhosted helm helpers
     digest: bec4c26bab3c50dccaa557fdac0b8ec2df4aa3662c26d5e0b292f6f767d492bb
     name: lib
@@ -240,7 +240,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-08-23T00:03:51.796434957Z"
+    created: "2020-08-23T14:51:46.737611742Z"
     description: Selfhosted helm helpers
     digest: 9eedb4130bea21fb5404d8becb241880ccfdc675aab18e152c3853cdbade1a93
     name: lib
@@ -250,20 +250,20 @@ entries:
     version: 0.1.0
   mayan-edms:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.80752837Z"
+    created: "2020-08-23T14:51:46.741363685Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy Mayan EDMS
-    digest: 036363c6f45f825c1c65e93bd76af00ebdb77d8c0d918f8d8859d6c8f8be393e
+    digest: 4a3eeede655417b0f0a949ae4e6ba7ac6704d4d3242cd6bbeff1bf0b3090fd2b
     name: mayan-edms
     type: application
     urls:
     - https://homelab-library.github.io/charts/mayan-edms-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.80158591Z"
+    created: "2020-08-23T14:51:46.740629777Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -276,7 +276,7 @@ entries:
     - https://homelab-library.github.io/charts/mayan-edms-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.799885992Z"
+    created: "2020-08-23T14:51:46.739917669Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -290,20 +290,20 @@ entries:
     version: 0.2.1
   planarally:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.809743792Z"
+    created: "2020-08-23T14:51:46.743609511Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy planarally
-    digest: 1dce4698d0b0d3ee1c18fad9c997c04743d5bbf77718bd89cd0bc617f69eace9
+    digest: 52a1eb21f94ed587efda4abd4f365b2cf4d7ddb83ec86f43a0145a73a1a2e1a9
     name: planarally
     type: application
     urls:
     - https://homelab-library.github.io/charts/planarally-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.809012385Z"
+    created: "2020-08-23T14:51:46.742910203Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -316,7 +316,7 @@ entries:
     - https://homelab-library.github.io/charts/planarally-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.808254077Z"
+    created: "2020-08-23T14:51:46.742139794Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -330,20 +330,20 @@ entries:
     version: 0.2.1
   rundeck:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.811864014Z"
+    created: "2020-08-23T14:51:46.746868049Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy rundeck
-    digest: a5e4cc173bbbb6b260c45adc69e37fa778065eee52d5e6ab3cb1d837541b4fed
+    digest: 51e6a75bc160af151a59a067ebc6044c2abff02f9d19cabc7d7cfe4fbb5d018b
     name: rundeck
     type: application
     urls:
     - https://homelab-library.github.io/charts/rundeck-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.811136007Z"
+    created: "2020-08-23T14:51:46.745663335Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -356,7 +356,7 @@ entries:
     - https://homelab-library.github.io/charts/rundeck-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.810440599Z"
+    created: "2020-08-23T14:51:46.744559822Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -368,22 +368,36 @@ entries:
     urls:
     - https://homelab-library.github.io/charts/rundeck-0.2.1.tgz
     version: 0.2.1
+  static-site:
+  - apiVersion: v2
+    created: "2020-08-23T14:51:46.747709858Z"
+    dependencies:
+    - name: lib
+      repository: file://../lib
+      version: 0.3.1
+    description: Deploy Static Site
+    digest: 74e9fdf5ff4cafaffeb2675045a5a95a7bdbf3247e0ac6131aee95938898cc7b
+    name: static-site
+    type: application
+    urls:
+    - https://homelab-library.github.io/charts/static-site-0.3.1.tgz
+    version: 0.3.1
   synapse:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.813567031Z"
+    created: "2020-08-23T14:51:46.749221576Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy synapse
-    digest: a2fdbfcd9e7d426616fb1102f0d261b1789442a58ac8384138afb2a07beee1b8
+    digest: 062c8658f7fb2f5f982fc885fb43f555100d67144b4c5f70dd01b1145d863847
     name: synapse
     type: application
     urls:
     - https://homelab-library.github.io/charts/synapse-0.3.2.tgz
     version: 0.3.2
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.812581021Z"
+    created: "2020-08-23T14:51:46.748518568Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -397,20 +411,20 @@ entries:
     version: 0.3.1
   tasmoadmin:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.818277779Z"
+    created: "2020-08-23T14:51:46.752311012Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy TasmoAdmin
-    digest: 560391c10762dd2a9f2bffa7a6096da4c13a01c24b1b5e0ab8f0718e55ebc7c0
+    digest: eb8bae2944f90a96ae71d3e9501397b99e49f44dd65e21dafc0195b9ddf81086
     name: tasmoadmin
     type: application
     urls:
     - https://homelab-library.github.io/charts/tasmoadmin-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.816702163Z"
+    created: "2020-08-23T14:51:46.751618204Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -423,7 +437,7 @@ entries:
     - https://homelab-library.github.io/charts/tasmoadmin-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.815629752Z"
+    created: "2020-08-23T14:51:46.750925996Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -436,7 +450,7 @@ entries:
     - https://homelab-library.github.io/charts/tasmoadmin-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.814715043Z"
+    created: "2020-08-23T14:51:46.750216487Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -450,7 +464,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-08-23T00:03:51.814046536Z"
+    created: "2020-08-23T14:51:46.74961698Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -464,13 +478,13 @@ entries:
     version: 0.1.1
   zigbee2mqtt:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.81934589Z"
+    created: "2020-08-23T14:51:46.752906818Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Deploy zigbee2mqtt
-    digest: d10295db5d57dbd7840c32c37e823e5ad7552d50b0f04445d6acd20d069527f6
+    digest: 23a0496f015a3088da8b6ac5cc55db93290346884a9e30ca0a7492012df353c1
     name: zigbee2mqtt
     type: application
     urls:
@@ -478,20 +492,20 @@ entries:
     version: 0.3.1
   zwave2mqtt:
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.821777215Z"
+    created: "2020-08-23T14:51:46.754132033Z"
     dependencies:
     - name: lib
       repository: file://../lib
       version: 0.3.1
     description: Z-Wave to MQTT bridge
-    digest: 3065a2bcdeb01ce9a6fe01ecc69a2e68b34d033ddbc944316bdb5c14a90a17a0
+    digest: ef5b8d13148b794afb4f000e1c60d74781082b78e33a93f98d061d8dba20cbe1
     name: zwave2mqtt
     type: application
     urls:
     - https://homelab-library.github.io/charts/zwave2mqtt-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
-    created: "2020-08-23T00:03:51.820446201Z"
+    created: "2020-08-23T14:51:46.753506625Z"
     dependencies:
     - name: lib
       repository: file://../lib
@@ -503,4 +517,4 @@ entries:
     urls:
     - https://homelab-library.github.io/charts/zwave2mqtt-0.3.0.tgz
     version: 0.3.0
-generated: "2020-08-23T00:03:51.783616227Z"
+generated: "2020-08-23T14:51:46.724580092Z"
